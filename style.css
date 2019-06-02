@@ -422,7 +422,9 @@ ul li a {
   text-align: center;
 }
 
-.fa-envelope, .fa-facebook {
+.fa-envelope, 
+.fa-facebook,
+.fa-discord {
   color: #fff;
   margin-top: 30px;
   cursor: pointer;
