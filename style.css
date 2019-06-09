@@ -8,6 +8,11 @@
   text-decoration: none;
 }
 
+.visit a {
+	color:#000;
+	text-decoration:none;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -323,6 +328,14 @@ ul li a {
 
 .port-disc {
   margin-top: 3px;
+}
+
+.visit {
+	margin-top:10px;
+	font-weight:bold;
+	text-transform:uppercase;
+	cursor:pointer;
+	font-size:18px;
 }
 
 .h1-contact {
