@@ -323,7 +323,7 @@ ul li a {
   border-radius: 10px;
   cursor: pointer;
   -webkit-box-shadow: 8px 10px 55px -29px rgba(0, 0, 0, 0.75);
-          box-shadow: 8px 10px 55px -29px rgba(0, 0, 0, 0.75);
+  box-shadow: 8px 10px 55px -29px rgba(0, 0, 0, 0.75);
 }
 
 .project {
@@ -337,11 +337,20 @@ ul li a {
 }
 
 .visit {
-	margin-top:10px;
-	font-weight:bold;
+	margin-top:20px;
 	text-transform:uppercase;
 	cursor:pointer;
-	font-size:18px;
+	background:none;
+	outline:none;
+	border:2px solid #000;
+	width:100px;
+	height:30px;
+	color:#000;
+	transition:ease 0.4s;
+}
+
+.visit:hover {
+	transform:scale(1.1);
 }
 
 .h1-contact {
@@ -607,6 +616,11 @@ ul li a {
   .logo {
     padding: 15px 25px;
   }
+  
+  .visit {
+  margin-top:15px;
+  }
+  
 }
 
 @media (max-width: 604px) {
