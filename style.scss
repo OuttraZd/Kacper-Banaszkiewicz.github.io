@@ -16,6 +16,15 @@
 		}
 }
 
+.code a {
+	color:#000;
+	text-decoration:none;
+	&:visited {
+		color:#000;
+		text-decoration:none;
+		}
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -38,7 +47,7 @@ li {
 }
 
 .logo {
-  width: 50%;
+  width: 80%;
   height: 50px;
   color: #fff;
   padding: 15px 31px;
@@ -92,7 +101,7 @@ ul {
 }
 
 .toggle {
-  width: 50%;
+  width: 20%;
   padding: 7px 20px;
   text-align: right;
   box-sizing: border-box;
@@ -100,6 +109,9 @@ ul {
   display: none;
   margin-top: 2px;
   cursor: pointer;
+  .light {
+  	color:#000;
+  }
 }
 
 .about {
@@ -274,12 +286,14 @@ ul {
 }
 
 .port-img {
-  width: 390px;
-  height: 310px;
+  width: 420px;
+  height: 260px;
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 8px 10px 55px -29px rgba(0, 0, 0, 0.75);
+  background-position:center;
 }
+
 
 .project {
   margin-top: 20px;
@@ -291,21 +305,42 @@ ul {
   margin-top: 3px;
 }
 
-
-.visit {
-	margin-top:20px;
-	text-transform:uppercase;
-	cursor:pointer;
-	background:none;
-	outline:none;
-	border:2px solid #000;
-	width:100px;
-	height:30px;
-	color:#000;
-	transition:ease 0.4s;
-	&:hover {
-		transform:scale(1.1);
+.button-container {
+  display:flex;
+  justify-content: center;
+  width:100%;
+  height:auto;
+  margin:20px;
+  .button-margin {
+	padding:7px;
+  	.visit {
+      	margin-top:20px;
+      	text-transform:uppercase;
+      	cursor:pointer;
+      	background:none;
+    	outline:none;
+      	border:2px solid #000;
+      	width:100px;
+      	height:30px;
+      	color:#000;
+      	transition:ease 0.4s;
+      	.code {
+			margin-top:20px;
+    		text-transform:uppercase;
+    	  	cursor:pointer;
+      		background:none;
+      		outline:none;
+     	 	border:2px solid #000;
+      		width:100px;
+     	 	height:30px;
+     	 	color:#000;
+   		   	transition:ease 0.4s;
+      		&:hover {
+      			transform:scale(1.09);
+      		}
+  	 	}
 	}
+}
 }
 
 
@@ -439,7 +474,7 @@ ul {
 }
 
 @media (max-width: 768px) {
-  .toggle, .nav-ico {
+  .toggle {
     display: block;
   }
   .fa-code, .fa-folder-open, .fa-phone {
@@ -453,16 +488,20 @@ ul {
     margin-top: -40px;
   }
   .active {
-    display: block;
+    display: flex;
   }
   ul {
     width: 100%;
     display: none;
+    height:100vh;
     position: relative;
     padding: 0px;
     left: 0;
     background-color: #f1f1f1;
     box-shadow: 0px 8px 30px -30px rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
     li {
       display: block;
       text-align: left;
@@ -483,7 +522,6 @@ ul {
   }
   .nav {
     position: absolute;
-    top: 49px;
   }
   .about {
     background-position: center;
@@ -542,11 +580,15 @@ ul {
   .logo {
     padding: 15px 25px;
   }
-  
-  .visit {
-  	margin-top:15px;
+
+  .port-img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 8px 10px 55px -29px rgba(0, 0, 0, 0.75);
+    background-position:center;
   }
-  
 }
 
 @media (max-width: 604px) {

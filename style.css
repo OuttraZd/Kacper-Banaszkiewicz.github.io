@@ -8,16 +8,25 @@
   text-decoration: none;
 }
 
-.visit a  {
- color:#000;
- text-decoration:none;
+.visit a {
+  color: #000;
+  text-decoration: none;
 }
 
 .visit a:visited {
-	color:#000;
-	text-decoration:none;
+  color: #000;
+  text-decoration: none;
 }
 
+.code a {
+  color: #000;
+  text-decoration: none;
+}
+
+.code a:visited {
+  color: #000;
+  text-decoration: none;
+}
 
 body {
   padding: 0;
@@ -45,7 +54,7 @@ li {
 }
 
 .logo {
-  width: 50%;
+  width: 80%;
   height: 50px;
   color: #fff;
   padding: 15px 31px;
@@ -104,7 +113,7 @@ ul li a {
 }
 
 .toggle {
-  width: 50%;
+  width: 20%;
   padding: 7px 20px;
   text-align: right;
   -webkit-box-sizing: border-box;
@@ -113,6 +122,14 @@ ul li a {
   display: none;
   margin-top: 2px;
   cursor: pointer;
+}
+
+.toggle {
+  color: #fff;
+}
+
+.light {
+	color:#000;
 }
 
 .about {
@@ -318,12 +335,13 @@ ul li a {
 }
 
 .port-img {
-  width: 390px;
-  height: 310px;
+  width: 420px;
+  height: 260px;
   border-radius: 10px;
   cursor: pointer;
   -webkit-box-shadow: 8px 10px 55px -29px rgba(0, 0, 0, 0.75);
-  box-shadow: 8px 10px 55px -29px rgba(0, 0, 0, 0.75);
+          box-shadow: 8px 10px 55px -29px rgba(0, 0, 0, 0.75);
+  background-position: center;
 }
 
 .project {
@@ -336,21 +354,56 @@ ul li a {
   margin-top: 3px;
 }
 
-.visit {
-	margin-top:20px;
-	text-transform:uppercase;
-	cursor:pointer;
-	background:none;
-	outline:none;
-	border:2px solid #000;
-	width:100px;
-	height:30px;
-	color:#000;
-	transition:ease 0.4s;
+.button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 20px;
 }
 
+.visit {
+  margin-top: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: none;
+  outline: none;
+  border: 2px solid #000;
+  width: 100px;
+  height: 30px;
+  color: #000;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+
+
+.code {
+  margin-top: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: none;
+  outline: none;
+  border: 2px solid #000;
+  width: 100px;
+  height: 30px;
+  color: #000;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+
+.code:hover,
 .visit:hover {
-	transform:scale(1.1);
+  -webkit-transform: scale(1.1);
+   transform: scale(1.09);
+}
+
+.button-margin {
+  padding: 7px;
 }
 
 .h1-contact {
@@ -450,7 +503,7 @@ ul li a {
   text-align: center;
 }
 
-.fa-envelope, 
+.fa-envelope,
 .fa-facebook,
 .fa-discord {
   color: #fff;
@@ -494,7 +547,7 @@ ul li a {
 }
 
 @media (max-width: 768px) {
-  .toggle, .nav-ico {
+  .toggle {
     display: block;
   }
   .fa-code, .fa-folder-open, .fa-phone {
@@ -508,17 +561,30 @@ ul li a {
     margin-top: -40px;
   }
   .active {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   ul {
     width: 100%;
     display: none;
+    height: 100vh;
     position: relative;
     padding: 0px;
     left: 0;
     background-color: #f1f1f1;
     -webkit-box-shadow: 0px 8px 30px -30px rgba(0, 0, 0, 0.75);
             box-shadow: 0px 8px 30px -30px rgba(0, 0, 0, 0.75);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   ul li {
     display: block;
@@ -539,7 +605,6 @@ ul li a {
   }
   .nav {
     position: absolute;
-    top: 49px;
   }
   .about {
     background-position: center;
@@ -616,11 +681,15 @@ ul li a {
   .logo {
     padding: 15px 25px;
   }
-  
-  .visit {
-  margin-top:15px;
+  .port-img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: 8px 10px 55px -29px rgba(0, 0, 0, 0.75);
+            box-shadow: 8px 10px 55px -29px rgba(0, 0, 0, 0.75);
+    background-position: center;
   }
-  
 }
 
 @media (max-width: 604px) {

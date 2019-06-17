@@ -4,7 +4,6 @@
         <head>
             <title>Kacper Banaszkiewicz - Portfolio</title>
 			<link rel="stylesheet" href="style.css">
-			<style lang="scss" rel="stylesheet/css"></style>
             <link rel="stylesheet" href="aos.css">
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"> 
 			<link href="https://fonts.googleapis.com/css?family=Poppins:600|Quicksand" rel="stylesheet">
@@ -21,14 +20,14 @@
             	<div class="logo">Kacper Banaszkiewicz</div>
               	<nav class="nav">
               		<ul>
-						  <li><a id="link1" href="#">O mnie</a></li><div class="nav-ico"><span class="fas fa-user-circle"></span></div>
-						  <li><a id="link2" href="#">Technologie</a></li><div class="nav-ico"><span class="fas fa-code"></span></div>
-						  <li><a id="link3" href="#">Projekty</a></li><div class="nav-ico"><span class="fas fa-folder-open"></span></div>
-						  <li><a id="link4" href="#">Kontakt</a></li><div class="nav-ico"><span class="fas fa-phone"></span></div>
+						  <li><a id="link1" href="#">O mnie</a></li>
+						  <li><a id="link2" href="#">Technologie</a></li>
+						  <li><a id="link3" href="#">Projekty</a></li>
+						  <li><a id="link4" href="#">Kontakt</a></li>
               		</ul>
               	</nav>
               
-           	<div data-aos="fade-left"class="toggle">
+           	<div data-aos="fade-left" class="toggle">
            		<span class="fas fa-bars menu fa-2x"></span>
            	</div>
            	
@@ -99,40 +98,68 @@
                 
                 <div class="port-box">
                 	<div class="portfolio-element">
-                		<img data-aos="zoom-in" class="port-img" src="img/web1.png" alt="web1">
-                		<span class="project">Hotel (szablon)</span>
-                		<span class="port-disc">Szablon wizytówki internetowej hotelu </span>
-                		<button class="visit"><a href="https://outtrazd.github.io/Hotel-Website/" target="blank">Odwiedź</a></button>
+                		<img data-aos="zoom-in" class="port-img" src="img/web1.png" alt="Projekt wizytówki hotelu">
+                		<span class="project">Hotel (szablon, beta)</span>
+						<span class="port-disc">Szablon wizytówki internetowej hotelu </span>
+						<div class="button-container">
+							<div class="button-margin">
+								<button class="visit"><a href="https://outtrazd.github.io/Hotel-Website/" target="_blank">Odwiedź</a></button>
+							</div>
+							<div class="button-margin">
+								<button class="code"><a href="https://github.com/OuttraZd/Hotel-Website" target="_blank">Kod</a></button>
+							</div>
+						</div>
                 	</div>
                 </div>
                 	
                 	
                 <div class="port-box">
                 	<div class="portfolio-element">
-                		<img data-aos="zoom-in" class="port-img" src="img/web1.png" alt="web1">
+                		<img data-aos="zoom-in" class="port-img" src="img/web2.png" alt="web2">
                 		<span class="project">Hotel</span>
                 		<span class="port-disc">Używam go od dosłownie dwóch tygodni.</span>
-                		<button class="visit">Odwiedź</button>
+                		<div class="button-container">
+                			<div class="button-margin">
+								<button class="visit">Odwiedź</button>
+							</div>
+							<div class="button-margin">
+								<button class="code">Kod</button>
+							</div>
+						</div>
                 	</div> 
                 </div>
                           	
                           	
                <div class="port-box">
                    <div class="portfolio-element">
-                        <img data-aos="zoom-in" class="port-img" src="img/web1.png" alt="web1">
+                        <img data-aos="zoom-in" class="port-img" src="img/web2.png" alt="web2">
                         <span class="project">Hotel</span>
                         <span class="port-disc">Używam go od dosłownie dwóch tygodni.</span>
-                        <button class="visit">Odwiedź</button>
+						<div class="button-container">
+							<div class="button-margin">
+								<button class="visit">Odwiedź</button>
+							</div>
+							<div class="button-margin">
+								<button class="code">Kod</button>
+							</div>
+						</div>
                   </div> 
             	</div>
             	
                           	
                 <div class="port-box">
                     <div class="portfolio-element">
-                      <img data-aos="zoom-in" class="port-img" src="img/web1.png" alt="web1">
+                      <img data-aos="zoom-in" class="port-img" src="img/web2.png" alt="web2">
                       <span class="project">Hotel</span>
                       <span class="port-disc">Używam go od dosłownie dwóch tygodni.</span>
-                      <button class="visit">Odwiedź</button>
+					  <div class="button-container">
+					  	<div class="button-margin">
+							<button class="visit">Odwiedź</button>
+						</div>
+						<div class="button-margin">
+							<button class="code">Kod</button>
+						</div>
+					</div>
                    	</div> 
                  </div>
                 	<!---Tutaj możesz dodać nową technologię dodając portfolio element --->                	
@@ -194,7 +221,7 @@
 			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 			<script type="text/javascript" src="script/jquery.scrollTo.min.js"></script>
 		
-		<script>
+		<script type="text/javascript">
 				
 			jQuery(function($)
 			{
@@ -210,10 +237,20 @@
 			);
 		
 			
-		</script>  
-			
-                
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.js"></script>
+		</script>
+		  		
+                                           
+        <script type="text/javascript">
+             
+            var toggle = document.querySelector('.toggle');
+            
+            toggle.onclick = function () {
+           	this.classList.toggle('light');
+            };
+             
+        </script>
+        
+        
         <script type="text/javascript">
         
         	$(document).ready(function (){
@@ -240,8 +277,8 @@
            
        </script>
     
-       	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
-     	<script type="text/javascript" src="script/aos.js"></script>
+    
+     <script type="text/javascript" src="script/aos.js"></script>
    
    		<script>
    			
