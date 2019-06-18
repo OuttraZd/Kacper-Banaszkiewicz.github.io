@@ -53,7 +53,7 @@ li {
   padding: 15px 31px;
   text-transform: uppercase;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .scrolled header {
@@ -77,7 +77,7 @@ ul {
     display: inline-block;
     padding: 10px 6px;
     color: #fff;
-    font-size: 17px;
+    font-size: 18px;
     transition: ease 0.2s;
     text-transform: uppercase;
     cursor: pointer;
@@ -105,13 +105,16 @@ ul {
   padding: 7px 20px;
   text-align: right;
   box-sizing: border-box;
-  color: #fff;
+  color: white;
   display: none;
   margin-top: 2px;
   cursor: pointer;
-  .light {
-  	color:#000;
-  }
+  font-size:40px;
+}
+
+
+.light {
+  color:#000;
 }
 
 .about {
@@ -210,9 +213,11 @@ ul {
 }
 
 .technology {
-  width: 100%;
+  width: 84%;
   height: auto;
   margin-top: 55px;
+  margin-left:8%;
+  margin-right: 8%;
 }
 
 .technology-container {
@@ -311,37 +316,41 @@ ul {
   width:100%;
   height:auto;
   margin:20px;
-  .button-margin {
-	padding:7px;
-  	.visit {
-      	margin-top:20px;
-      	text-transform:uppercase;
-      	cursor:pointer;
-      	background:none;
-    	outline:none;
-      	border:2px solid #000;
-      	width:100px;
-      	height:30px;
-      	color:#000;
-      	transition:ease 0.4s;
-      	.code {
-			margin-top:20px;
-    		text-transform:uppercase;
-    	  	cursor:pointer;
-      		background:none;
-      		outline:none;
-     	 	border:2px solid #000;
-      		width:100px;
-     	 	height:30px;
-     	 	color:#000;
-   		   	transition:ease 0.4s;
-      		&:hover {
-      			transform:scale(1.09);
-      		}
-  	 	}
-	}
 }
+
+.button-margin {
+  padding:7px;
 }
+
+.visit {
+  margin-top:20px;
+  text-transform:uppercase;  
+  cursor:pointer;
+  background:none;
+	outline:none;
+  border:2px solid #000;
+  width:100px;
+  height:30px;
+  color:#000;
+  transition:ease 0.4s;
+}
+
+.code {
+  margin-top:20px;
+  text-transform:uppercase;
+  cursor:pointer;
+  background:none;
+  outline:none;
+  border:2px solid #000;
+  width:100px;
+  height:30px;
+  color:#000;
+  transition:ease 0.4s;
+  &:hover {
+    transform:scale(1.09);
+  }
+}
+   
 
 
 .h1-contact {
@@ -508,6 +517,7 @@ ul {
       padding: 20px 25px;
       color: #000;
       height: 60px;
+      font-size: 20px;
       &:hover {
         border: none;
         -webkit-transform: scale(1.05);
@@ -530,21 +540,40 @@ ul {
     text-align: center;
     margin-top: 50px;
   }
+
+  .technology {
+    width: 100%;
+    height: auto;
+    margin-top: 55px;
+    margin-left:0;
+    margin-right:0;
+  }
+
+
   .technology-container {
     flex-direction: column;
   }
+
+
   .technology-element {
     justify-content: center;
     width: 100%;
+    padding:45px;
   }
+
+
   .tech-disc {
     margin-left: 0%;
     margin-right: 0%;
     padding: 0 25px;
   }
+
+
   .por-disc {
     padding: 0 25px;
   }
+
+
   .portfolio {
     display: flex;
     flex-direction: column;
@@ -552,25 +581,39 @@ ul {
     height: auto;
     width: 100%;
   }
+
+
   .portfolio-container {
     flex-direction: column;
   }
+
+
   .portfolio-element {
     padding: 30px 0;
   }
+
+
   .port-box {
     padding: 0;
   }
+
+
   .contact-container {
     flex-direction: column;
   }
+
+
   .contact-box:nth-child(1) {
     margin-top: 70px;
   }
+
+
   .footer-container {
     display: block;
     padding: 10px 20px;
   }
+
+
   .fa-github {
     margin-top: 14px;
   }
@@ -582,7 +625,7 @@ ul {
   }
 
   .port-img {
-    width: 300px;
+    width: 320px;
     height: 200px;
     border-radius: 10px;
     cursor: pointer;
@@ -612,6 +655,17 @@ ul {
   .motto {
     bottom: 70px;
   }
+
+  ul {
+    li {
+      font-size:20px;
+    }
+  }
+
+  .port-img {
+    width:320px;
+  }
+
 }
 
 @media (min-width: 1200px) {
