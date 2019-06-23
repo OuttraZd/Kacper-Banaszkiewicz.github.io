@@ -55,7 +55,7 @@ li {
 
 .logo {
   width: 80%;
-  height: 50px;
+  height: auto;
   color: #fff;
   padding: 15px 31px;
   text-transform: uppercase;
@@ -222,11 +222,12 @@ ul li a {
   border: none;
 }
 
-.h1-technology {
+.head-technology {
   font-size: 32px;
   text-align: right;
   padding: 0 30px;
   margin-top: 40px;
+  font-weight: bold;
 }
 
 .technology {
@@ -282,12 +283,13 @@ ul li a {
   margin-right: 10%;
 }
 
-.h1-portfolio {
+.head-portfolio {
   font-size: 32px;
   text-align: left;
   overflow: hidden;
   padding: 50px 30px;
   margin-top: 40px;
+  font-weight: bold;
 }
 
 .box {
@@ -295,9 +297,18 @@ ul li a {
   overflow: hidden;
 }
 
+.head-portfilio-border {
+	width:180px;
+	height:3px;
+	background-color:#000;
+	margin-left:30px;
+	margin-top:-35px;
+}
+
 .portfolio {
   width: 100%;
   height: auto;
+  margin-top:30px;
 }
 
 .portfolio-container {
@@ -317,7 +328,7 @@ ul li a {
 }
 
 .port-box {
-  padding: 40px;
+  padding: 50px 0;
 }
 
 .portfolio-element {
@@ -339,7 +350,7 @@ ul li a {
   border-radius: 10px;
   cursor: pointer;
   -webkit-box-shadow: 8px 10px 55px -29px rgba(0, 0, 0, 0.75);
-          box-shadow: 8px 10px 55px -29px rgba(0, 0, 0, 0.75);
+  box-shadow: 8px 10px 55px -29px rgba(0, 0, 0, 0.75);
   background-position: center;
 }
 
@@ -397,21 +408,28 @@ ul li a {
   transition: ease 0.4s;
 }
 
-.code:hover {
+.visit:hover {
   -webkit-transform: scale(1.09);
-          transform: scale(1.09);
+   transform: scale(1.09);
 }
 
-.h1-contact {
+.code:hover {
+  -webkit-transform: scale(1.09);
+   transform: scale(1.09);
+}
+
+.head-contact {
   font-size: 32px;
   text-align: right;
   overflow: hidden;
-  padding: 50px 30px;
+  padding: 30px;
+  font-weight: bold;
 }
 
 .contact {
   width: 100%;
   height: auto;
+  margin-top:15px;
   background-color: #FFF0F7;
   padding: 150px 0px;
   background: linear-gradient(253deg, #4c56e8, #b01cbe);
@@ -451,15 +469,15 @@ ul li a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: auto;
   width: 100%;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .contact-box {
@@ -512,7 +530,7 @@ ul li a {
   height: auto;
   background: #303030;
   -webkit-box-shadow: 1px 17px 35px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 1px 17px 35px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 17px 35px 0px rgba(0, 0, 0, 0.75);
 }
 
 .footer-container {
@@ -520,8 +538,8 @@ ul li a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 5px 35px;
 }
 
@@ -606,10 +624,16 @@ ul li a {
   .about {
     background-position: center;
   }
-  .h1-technology, .h1-portfolio, .h1-contact {
+  .head-technology, .head-portfolio {
     text-align: center;
     margin-top: 50px;
   }
+  
+  .head-contact {
+  	margin-top: 10px;
+  	text-align: center;
+  }
+  
   .technology {
     width: 100%;
     height: auto;
@@ -662,7 +686,7 @@ ul li a {
     padding: 30px 0;
   }
   .port-box {
-    padding: 0;
+    padding: 5px 0;
   }
   .contact-container {
     -webkit-box-orient: vertical;
@@ -695,6 +719,15 @@ ul li a {
             box-shadow: 8px 10px 55px -29px rgba(0, 0, 0, 0.75);
     background-position: center;
   }
+   
+  .head-portfilio-border {
+  	width:180px;
+  	height:3px;
+  	background-color:#000;
+  	margin:0 auto;
+  	margin-top:-30px;
+  }
+  
 }
 
 @media (max-width: 604px) {
@@ -761,4 +794,3 @@ ul li a {
     bottom: 45px;
   }
 }
-/*# sourceMappingURL=style.css.map */
