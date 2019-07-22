@@ -566,7 +566,7 @@ ul li a {
   }
   
   .active {
-    display: -webkit-box;
+    display: -webkit-box; 
     display: -ms-flexbox;
     display: flex;
   }
@@ -813,12 +813,15 @@ ul li a {
 @media (max-width: 600px) {
   .motto {
     bottom: 75px;
+    padding:0 15px;
   }
   .me {
     bottom: 65px;
+    padding:0 15px;
   }
   .more {
     bottom: 45px;
+    margin-left:15px;
   }
 }
 
