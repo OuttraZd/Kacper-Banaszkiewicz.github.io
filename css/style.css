@@ -181,6 +181,7 @@ ul li a {
   font-size: 32px;
   font-family: 'Poppins', sans-serif;
   line-height: 38px;
+  padding: 0 30px;
 }
 
 .me {
@@ -188,6 +189,7 @@ ul li a {
   position: relative;
   bottom: 110px;
   line-height: 25px;
+  padding: 0 30px;
 }
 
 .me-color {
@@ -207,6 +209,8 @@ ul li a {
   font-size: 16px;
   outline: none;
   cursor: pointer;
+  margin-left: 30px;
+  border-radius:5px;
 }
 
 .more:hover {
@@ -755,6 +759,10 @@ ul li a {
   .port-box {
     padding: 80px;
   }
+  
+  .more {
+	 
+  }
 }
 
 @media (max-width: 1200px) {
@@ -802,7 +810,7 @@ ul li a {
   }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .motto {
     bottom: 75px;
   }
@@ -811,6 +819,12 @@ ul li a {
   }
   .more {
     bottom: 45px;
+  }
+}
+
+@media (min-width: 600px) {
+  .more {
+    bottom: 90px;
   }
 }
 
