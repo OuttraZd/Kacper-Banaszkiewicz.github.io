@@ -86,7 +86,7 @@ ul {
 ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 0px 8px;
+  padding: 0px 6px;
   color: #fff;
   font-size: 18px;
   -webkit-transition: ease 0.2s;
@@ -721,29 +721,6 @@ ul li a {
   
 }
 
-@media (max-width:866px) {
-
-  .information {
-    justify-content:flex-end;
-  }
-
-    .motto,
-    .me {
-      padding:0 30px;
-      position: relative;
-      bottom: 110px;
-    }
-  
-    .more {
-      margin-left:30px;
-      position: relative;
-      bottom: 110px;
-    }
-  
-    .information {
-      padding:0;
-    }
-}
 
 @media (max-width: 604px) {
   .nav a {
@@ -784,6 +761,27 @@ ul li a {
   .port-box {
     padding: 20px;
   }
+  
+  .information {
+    justify-content:flex-end;
+  }
+
+    .motto,
+    .me {
+      padding:0 30px;
+      position: relative;
+      bottom: 110px;
+    }
+  
+    .more {
+      margin-left:30px;
+      position: relative;
+      bottom: 110px;
+    }
+  
+    .information {
+      padding:0;
+    }
 }
 
 @media (max-width: 526px) {
