@@ -44,13 +44,14 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items:center;
   z-index: 100;
   position: fixed;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   background-color: #000;
   -webkit-box-shadow: -1px 11px 7px -9px rgba(0, 0, 0, 0.75);
-          box-shadow: -1px 11px 7px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 11px 7px -9px rgba(0, 0, 0, 0.75);
 }
 
 .logo {
@@ -85,7 +86,7 @@ ul {
 ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 10px 6px;
+  padding: 0px 8px;
   color: #fff;
   font-size: 18px;
   -webkit-transition: ease 0.2s;
@@ -95,12 +96,8 @@ ul li {
 }
 
 ul li:hover {
-  border-bottom: 2px solid #2972b5;
-  background-color: rgba(0, 0, 0, 0.4);
-  background-color: rgba(255, 255, 255, 0.3);
-  -webkit-transform: scaleX(1.05);
-  transform: scaleX(1.05);
-  padding-bottom: 14px;
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
 }
 
 ul li a {
@@ -133,25 +130,22 @@ ul li a {
   width: 100%;
   height: 100vh;
   background-image: url("img/about.png");
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-shadow: 1px 10px 50px -29px rgba(0, 0, 0, 0.75);
           box-shadow: 1px 10px 50px -29px rgba(0, 0, 0, 0.75);
   background: linear-gradient(250deg, #5f1f61, #091c76, #642579, #240cad);
   background-size: 800% 800%;
   -webkit-animation: gradient 32s ease infinite;
   animation: gradient 32s ease infinite;
+}
+
+.information {
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content:flex-end;
+  align-items:flex-start;
+  flex-direction:column;
+  padding:120px 180px;
 }
 
 @-webkit-keyframes gradient {
@@ -179,10 +173,10 @@ ul li a {
 }
 
 .motto {
+  
+  text-transform: uppercase;
   position: relative;
   bottom: 110px;
-  padding: 0 30px;
-  text-transform: uppercase;
   color: #fff;
   font-size: 32px;
   font-family: 'Poppins', sans-serif;
@@ -192,8 +186,7 @@ ul li a {
 .me {
   color: #fff;
   position: relative;
-  bottom: 100px;
-  padding: 0 30px;
+  bottom: 110px;
   line-height: 25px;
 }
 
@@ -205,8 +198,7 @@ ul li a {
 
 .more {
   position: relative;
-  bottom: 80px;
-  margin-left: 30px;
+  bottom: 110px;
   width: 200px;
   height: 40px;
   border: 1px solid #fff;
@@ -295,14 +287,6 @@ ul li a {
 .box {
   height: auto;
   overflow: hidden;
-}
-
-.head-portfilio-border {
-	width:180px;
-	height:3px;
-	background-color:#000;
-	margin-left:30px;
-	margin-top:-35px;
 }
 
 .portfolio {
@@ -564,16 +548,19 @@ ul li a {
   .toggle {
     display: block;
   }
+
   .fa-code, .fa-folder-open, .fa-phone {
     padding: 0 30px;
     font-size: 23px;
     margin-top: -40px;
   }
+
   .fa-user-circle {
     padding: 0 33px;
     font-size: 23px;
     margin-top: -40px;
   }
+  
   .active {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -727,7 +714,35 @@ ul li a {
   	margin:0 auto;
   	margin-top:-30px;
   }
+
+  .header {
+    align-items:stretch;
+  }
   
+}
+
+@media (max-width:866px) {
+
+  .information {
+    justify-content:flex-end;
+  }
+
+    .motto,
+    .me {
+      padding:0 30px;
+      position: relative;
+      bottom: 110px;
+    }
+  
+    .more {
+      margin-left:30px;
+      position: relative;
+      bottom: 110px;
+    }
+  
+    .information {
+      padding:0;
+    }
 }
 
 @media (max-width: 604px) {
@@ -765,6 +780,12 @@ ul li a {
   }
 }
 
+@media (max-width: 1200px) {
+  .port-box {
+    padding: 20px;
+  }
+}
+
 @media (max-width: 526px) {
   .logo {
     padding: 15px;
@@ -792,5 +813,11 @@ ul li a {
   }
   .more {
     bottom: 45px;
+  }
+}
+
+@media (min-width:856px) {
+  .port-img {
+
   }
 }
