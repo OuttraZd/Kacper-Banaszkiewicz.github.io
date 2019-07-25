@@ -331,7 +331,7 @@ ul li a {
 
 .port-img {
   width: 420px;
-  height: 260px;
+  height: 200px;
   border-radius: 10px;
   cursor: pointer;
   -webkit-box-shadow: 8px 10px 55px -29px rgba(0, 0, 0, 0.75);
@@ -698,15 +698,6 @@ ul li a {
   .logo {
     padding: 15px 25px;
   }
-  .port-img {
-    width: 320px;
-    height: 200px;
-    border-radius: 10px;
-    cursor: pointer;
-    -webkit-box-shadow: 8px 10px 55px -29px rgba(0, 0, 0, 0.75);
-            box-shadow: 8px 10px 55px -29px rgba(0, 0, 0, 0.75);
-    background-position: center;
-  }
    
   .head-portfilio-border {
   	width:180px;
@@ -755,10 +746,6 @@ ul li a {
 @media (min-width: 1200px) {
   .port-box {
     padding: 80px;
-  }
-  
-  .more {
-	 
   }
 }
 
@@ -825,11 +812,5 @@ ul li a {
 @media (min-width: 600px) {
   .more {
     bottom: 50px;
-  }
-}
-
-@media (min-width:856px) {
-  .port-img {
-
   }
 }
