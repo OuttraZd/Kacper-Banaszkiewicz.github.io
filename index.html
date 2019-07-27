@@ -60,18 +60,34 @@
             	
             		<div class="technology-element">
             			<img class="tech-img" data-aos="zoom-in" src="img/html.png" alt="html">
+            			<div class="tech-disc">
+            				<div class="bold">HTML</div>
+            				Poziom zaawansowany
+            			</div>
             		</div>
             		               		
             		<div class="technology-element">
-            		<img class="tech-img" data-aos="zoom-in" src="img/css.png" alt="css">
+            			<img class="tech-img" data-aos="zoom-in" src="img/css.png" alt="css">
+            			<div class="tech-disc">
+            				<div class="bold">CSS</div>
+            				Poziom średniozaawansowany
+            			</div>
             		</div>
             		
             		<div class="technology-element">
             			<img class="tech-img" data-aos="zoom-in" src="img/sass.png" alt="sass">
+            			<div class="tech-disc">
+            				<div class="bold">Preprocesor SASS</div>
+            				Poziom podstawowy
+            			</div>
             		</div>
             		
             		<div class="technology-element">
             			<img class="tech-img" data-aos="zoom-in" src="img/github.png" alt="github">
+            			<div class="tech-disc">
+            				<div class="bold">GitHub</div>
+            				Wszystkie moje projekty możesz zobaczyć na moim GitHubie
+            			</div>
             		</div>
             		<!---Tutaj możesz dodać nową technologię dodając technology element i tech img  --->
             	</div>
@@ -197,6 +213,16 @@
 			);
 		
 			
+		</script>
+		
+		<script>
+		
+			window.addEventListener('click', function (e) {
+			if (e.target.classList.contains('tech-img')) {
+			e.target.parentNode.children[1].classList.toggle('tech-active')
+			}
+			})
+		
 		</script>
 		  		
                                            
