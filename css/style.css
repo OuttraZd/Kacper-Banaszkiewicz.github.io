@@ -8,22 +8,16 @@
   text-decoration: none;
 }
 
-.visit a {
+.visit a,
+.code a,
+.tech-disc a {
   color: #000;
   text-decoration: none;
 }
 
-.visit a:visited {
-  color: #000;
-  text-decoration: none;
-}
-
-.code a {
-  color: #000;
-  text-decoration: none;
-}
-
-.code a:visited {
+.visit a:visited,
+.code a:visited,
+.tech-disc a:visited {
   color: #000;
   text-decoration: none;
 }
@@ -171,8 +165,7 @@ ul li a {
   }
 }
 
-.motto {
-  
+.motto {  
   text-transform: uppercase;
   position: relative;
   bottom: 110px;
@@ -263,18 +256,23 @@ ul li a {
 .tech-img {
   width: 120px;
   height: 120px;
-}
-
-.bold {
-  font-weight: bold;
+  cursor:pointer;
 }
 
 .tech-disc {
-  text-align: center;
-  margin: 25px 0;
-  margin-left: 10%;
-  margin-right: 10%;
+	display:none;
+	text-align: center;
+	margin-top:15px;
 }
+
+.bold {
+ 	font-weight:bold;
+ }
+ 
+.tech-active {
+ 	display:flex;
+ 	flex-direction:column;
+ }
 
 .head-portfolio {
   font-size: 32px;
@@ -566,8 +564,9 @@ ul li a {
   .active {
     display: -webkit-box; 
     display: -ms-flexbox;
-    display: flex;
+    display:flex;
   }
+  
   ul {
     width: 100%;
     display: none;
@@ -613,9 +612,14 @@ ul li a {
   .about {
     background-position: center;
   }
-  .head-technology, .head-portfolio {
+  .head-technology {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
+  }
+  
+  .head-portfolio {
+  	text-align:center;
+  	margin-top:20px;
   }
   
   .head-contact {
@@ -643,11 +647,7 @@ ul li a {
     width: 100%;
     padding: 45px;
   }
-  .tech-disc {
-    margin-left: 0%;
-    margin-right: 0%;
-    padding: 0 25px;
-  }
+
   .por-disc {
     padding: 0 25px;
   }
