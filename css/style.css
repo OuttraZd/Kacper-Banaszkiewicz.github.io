@@ -334,7 +334,7 @@ ul li a {
   border-radius: 10px;
   cursor: pointer;
   -webkit-box-shadow: 8px 10px 55px -29px rgba(0, 0, 0, 0.75);
-  box-shadow: 7px 7px 55px -29px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 7px 50px -29px rgba(0, 0, 0, 0.75);
   background-position: center;
 }
 
