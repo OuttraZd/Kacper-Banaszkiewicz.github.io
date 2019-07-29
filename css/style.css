@@ -138,7 +138,7 @@ ul li a {
   justify-content:flex-end;
   align-items:flex-start;
   flex-direction:column;
-  padding:120px 180px;
+  padding:120px 230px;
 }
 
 @-webkit-keyframes gradient {
@@ -334,18 +334,25 @@ ul li a {
   border-radius: 10px;
   cursor: pointer;
   -webkit-box-shadow: 8px 10px 55px -29px rgba(0, 0, 0, 0.75);
-  box-shadow: 8px 10px 55px -29px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 7px 55px -29px rgba(0, 0, 0, 0.75);
   background-position: center;
 }
 
 .project {
-  margin-top: 20px;
+  margin-top: 10px;
   text-transform: uppercase;
   font-weight: bold;
 }
 
+.port-time {
+	font-size:15px;
+	margin-top:11px;
+}
+
 .port-disc {
-  margin-top: 3px;
+  margin-top: 5px;
+  font-size:17px;
+  text-align:center;
 }
 
 .button-container {
@@ -650,7 +657,7 @@ ul li a {
     padding: 45px;
   }
 
-  .por-disc {
+  .port-disc {
     padding: 0 25px;
   }
   .portfolio {
@@ -750,7 +757,13 @@ ul li a {
 @media (min-width: 1200px) {
   .port-box {
     padding: 80px;
-  }
+   }
+   .motto {
+   	font-size:33px;
+   }
+   .me {
+    font-size:17px;
+   }
 }
 
 @media (max-width: 1200px) {
@@ -817,4 +830,14 @@ ul li a {
   .more {
     bottom: 50px;
   }
+}
+
+@media (max-height:400px) {
+	.information {
+		top:60px;
+		position:relative;
+	}
+	.more {
+		bottom:90px; 
+	}
 }
