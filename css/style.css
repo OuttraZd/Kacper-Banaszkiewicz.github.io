@@ -455,6 +455,32 @@ ul li a {
   }
 }
 
+@keyframes ulShow {
+  0% {
+    background:none;
+  }
+  50% {
+    transform:scale(1.1);
+  }
+  100% {
+    background-color:#f1f1f1;
+    transform:scale(1);
+  }
+}
+
+@-webkit-keyframes ulShow {
+  0% {
+    background:none;
+  }
+  50% {
+    transform:scale(1.1);
+  }
+  100% {
+    background-color:#f1f1f1;
+    transform:scale(1);
+  }
+}
+
 .contact-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -595,6 +621,8 @@ ul li a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+	animation-name:ulShow;
+	animation-duration:.8s;
   }
   ul li {
     display: block;
