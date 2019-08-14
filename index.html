@@ -201,6 +201,11 @@
             		<div class="reference"><a href="https://github.com/OuttraZd" target="blank_"><span class="fab fa-github"></span></a></div>
             	</div>
 			</section>
+			
+			<div id="scrollUp">
+				<a id="link5" href="#">
+				<span class="fas fa-caret-up"></span></a>
+			</div>
 
 			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 			<script type="text/javascript" src="script/jquery.scrollTo.min.js"></script>
@@ -217,10 +222,31 @@
 				$('#link2').click(function() { $.scrollTo($('#skills'), 500); });
 				$('#link3').click(function() { $.scrollTo($('#folder'), 500); });
 				$('#link4').click(function() { $.scrollTo($('#contact'), 500); });
+				$('#link5').click(function() { $.scrollTo($('#about'), 500); });
 			}
 			);
 		
 			
+		</script>
+	
+		<script>
+		
+			var btn = $('#scrollUp');
+			
+			$(window).scroll(function() {
+			if ($(window).scrollTop() > 50) {
+			btn.addClass('show');
+			} else {
+			btn.removeClass('show');
+			}
+			});
+			
+			btn.on('click', function(e) {
+			e.preventDefault();
+			$('html, body').animate({scrollTop:0}, '50');
+			});
+						
+		
 		</script>
 		
 		<script>
@@ -255,20 +281,22 @@
         	
         </script>
                   
-           
+       
        <script type="text/javascript">
-          
-           (function() {  
-           window.addEventListener("scroll", function (event) {
-           var scroll = this.scrollY;
-           if(scroll > 1) {
-           document.body.classList.add('scrolled');
-           } else {
-           document.body.classList.remove('scrolled');
-           }
-           });
-           })()         
-           
+       
+       (function() {  
+       window.addEventListener("scroll", function (event) {
+       var scroll = this.scrollY;
+       if(scroll > 5) {
+       document.body.classList.add('scrolled');
+       } else {
+       document.body.classList.remove('scrolled');
+       }
+       });
+       })()         
+       
+       </script>       
+       
        </script>
     
     
