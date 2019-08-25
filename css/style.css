@@ -28,36 +28,6 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
-#scrollUp {
-	width:40px;
-	height:40px;
-	bottom:0;
-	right:0;
-	position:fixed;
-	background:#f1f1f1;
-	margin-bottom:20px;
-	margin-right:20px;
-	cursor:pointer;
-	display:flex;
-	align-items:center;
-	justify-content: center;
-	border-radius:100px;
-	webkit-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
-	transform:scale(.8);
-	transition:transform .4s ease;
-}
-
-#scrollUp.show {
-	transform:scale(1);
-}
-
-.fa-caret-up {
-	font-size:30px;
-	color:#000;
-}
-
 li {
   list-style-type: none;
 }
@@ -169,30 +139,6 @@ ul li a {
   padding:120px 230px;
 }
 
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 67%;
-  }
-  50% {
-    background-position: 100% 34%;
-  }
-  100% {
-    background-position: 0% 67%;
-  }
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 67%;
-  }
-  50% {
-    background-position: 100% 34%;
-  }
-  100% {
-    background-position: 0% 67%;
-  }
-}
-
 .motto {  
   text-transform: uppercase;
   position: relative;
@@ -295,18 +241,6 @@ ul li a {
 	font-size:18px;
 	animation-name:discShow;
 	animation-duration:.6s;
-}
-
-@keyframes discShow {
-	0% {transform:scale(.9);}
-	50% {transform:scale(1.1);}
-	100%{transform:scale(1);}
-}
-
-@-webkit-keyframes discShow {
-	0% {transform:scale(.9);}
-	50% {transform:scale(1.1);}
-	100%{transform:scale(1);}
 }
 
 .bold {
@@ -474,56 +408,6 @@ ul li a {
           box-shadow: 1px 17px 45px 0px rgba(0, 0, 0, 0.75);
 }
 
-@-webkit-keyframes contact-gradient {
-  0% {
-    background-position: 72% 0%;
-  }
-  50% {
-    background-position: 29% 100%;
-  }
-  100% {
-    background-position: 72% 0%;
-  }
-}
-
-@keyframes contact-gradient {
-  0% {
-    background-position: 72% 0%;
-  }
-  50% {
-    background-position: 29% 100%;
-  }
-  100% {
-    background-position: 72% 0%;
-  }
-}
-
-@keyframes ulShow {
-  0% {
-    background:none;
-  }
-  50% {
-    transform:scale(1.1);
-  }
-  100% {
-    background-color:#f1f1f1;
-    transform:scale(1);
-  }
-}
-
-@-webkit-keyframes ulShow {
-  0% {
-    background:none;
-  }
-  50% {
-    transform:scale(1.1);
-  }
-  100% {
-    background-color:#f1f1f1;
-    transform:scale(1);
-  }
-}
-
 .contact-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -619,6 +503,36 @@ ul li a {
 .fa-github:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+#scrollUp {
+	width:40px;
+	height:40px;
+	bottom:0;
+	right:0;
+	position:fixed;
+	background:#f1f1f1;
+	margin-bottom:20px;
+	margin-right:20px;
+	cursor:pointer;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	border-radius:100px;
+	webkit-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+	transform:scale(.8);
+	transition:transform .4s ease;
+}
+
+#scrollUp.show {
+	transform:scale(1);
+}
+
+.fa-caret-up {
+	font-size:30px;
+	color:#000;
 }
 
 @media (max-width: 768px) {
@@ -911,4 +825,102 @@ ul li a {
 	.more {
 		bottom:90px; 
 	}
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 67%;
+  }
+  50% {
+    background-position: 100% 34%;
+  }
+  100% {
+    background-position: 0% 67%;
+  }
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 67%;
+  }
+  50% {
+    background-position: 100% 34%;
+  }
+  100% {
+    background-position: 0% 67%;
+  }
+}
+
+@keyframes discShow {
+	0% {
+		transform:scale(.9);
+	}
+	50% {
+		transform:scale(1.1);
+	}
+	100%{
+		transform:scale(1);
+	}
+}
+
+@-webkit-keyframes discShow {
+	0% {
+		transform:scale(.9);
+	}
+	50% {
+		transform:scale(1.1);
+	}
+	100%{
+		transform:scale(1);
+	}
+}
+
+@keyframes contact-gradient {
+  0% {
+    background-position: 72% 0%;
+  }
+  50% {
+    background-position: 29% 100%;
+  }
+  100% {
+    background-position: 72% 0%;
+  }
+}
+
+@-webkit-keyframes contact-gradient {
+  0% {
+    background-position: 72% 0%;
+  }
+  50% {
+    background-position: 29% 100%;
+  }
+  100% {
+    background-position: 72% 0%;
+  }
+}
+
+@keyframes ulShow {
+  0% {
+    background:none;
+  }
+  50% {
+    transform:scale(1.1);
+  }
+  100% {
+    background-color:#f1f1f1;
+    transform:scale(1);
+  }
+}
+
+@-webkit-keyframes ulShow {
+  0% {
+    background:none;
+  }
+  50% {
+    transform:scale(1.1);
+  }
+  100% {
+    background-color:#f1f1f1;
+    transform:scale(1);
+  }
 }
