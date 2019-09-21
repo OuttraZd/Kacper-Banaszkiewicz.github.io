@@ -140,7 +140,7 @@ ul li a {
   justify-content:flex-end;
   align-items:flex-start;
   flex-direction:column;
-  padding:120px 230px;
+  padding:100px 230px;
 }
 
 .motto {  
@@ -604,10 +604,6 @@ ul li a {
   	animation-duration:.6s;
   }
   
-  ul li:nth-child(5):hover {
-  	text-decoration:underline dashed;
-  }
-  
   ul li:hover {
     border: none;
     -webkit-transform: scale(1.05);
@@ -615,15 +611,19 @@ ul li a {
     background: none;
     font-weight: bold;
   }
+  
   ul li a {
     color: #000;
   }
+  
   .nav {
     position: absolute;
   }
+  
   .about {
     background-position: center;
   }
+  
   .head-technology {
     text-align: center;
     margin-top: 40px;
@@ -647,12 +647,14 @@ ul li a {
     margin-left: 0;
     margin-right: 0;
   }
+  
   .technology-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  
   .technology-element {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -664,6 +666,7 @@ ul li a {
   .port-disc {
     padding: 0 25px;
   }
+  
   .portfolio {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -684,12 +687,15 @@ ul li a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  
   .portfolio-element {
     padding: 30px 0;
   }
+  
   .port-box {
     padding: 5px 0;
   }
+  
   .contact-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -699,16 +705,20 @@ ul li a {
   .contact-box:nth-child(1) {
     margin-top: 70px;
   }
+  
   .footer-container {
     display: block;
     padding: 10px 20px;
   }
+  
   .fa-github {
     margin-top: 14px;
   }
+  
   .contact {
     padding: 80px 0px;
   }
+  
   .logo {
     padding: 15px 25px;
   }
@@ -815,7 +825,7 @@ ul li a {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 769px) {
   .motto {
     bottom: 75px;
     padding:0 15px;
