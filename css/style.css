@@ -88,6 +88,10 @@ ul li {
   cursor: pointer;
 }
 
+ul li:nth-child(5) { /* Wyłączenie z listy Github na większej niż mobile */
+	display:none;
+}
+
 ul li:hover {
   -webkit-transform: scale(1.08);
   transform: scale(1.08);
@@ -589,6 +593,21 @@ ul li a {
     height: 60px;
     font-size: 20px;
   }
+  
+  ul li:nth-child(5) {
+  	display:block;
+  	position:absolute;
+  	bottom:0;
+  	margin-bottom:40px;
+  	font-weight:bold;
+  	animation-name:github;
+  	animation-duration:.6s;
+  }
+  
+  ul li:nth-child(5):hover {
+  	text-decoration:underline dashed;
+  }
+  
   ul li:hover {
     border: none;
     -webkit-transform: scale(1.05);
@@ -893,7 +912,7 @@ ul li a {
   }
 }
 
-@keyframes ulShow {
+@keyrames ulShow {
   0% {
     background:none;
   }
@@ -917,4 +936,22 @@ ul li a {
     background-color:#f1f1f1;
     transform:scale(1);
   }
+}
+
+@keyframes github {
+	0% {
+		transform:translateY(1000px);
+	}
+	100% {
+		transform:translateY(0px);
+	}
+}
+
+@-webkit-keyframes github {
+	0% {
+		transform:translateY(1000px);
+	}
+	100% {
+		transform:translateY(0px);
+	}
 }
