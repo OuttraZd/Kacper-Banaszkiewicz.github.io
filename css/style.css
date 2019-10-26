@@ -294,6 +294,7 @@ ul li a {
 
 .port-box {
   padding: 50px 0;
+  width:50%;
 }
 
 .portfolio-element {
@@ -521,7 +522,7 @@ ul li a {
 	align-items:center;
 	justify-content: center;
 	border-radius:100px;
-	webkit-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
 	transform:scale(.8);
@@ -692,6 +693,7 @@ ul li a {
   
   .port-box {
     padding: 5px 0;
+    width:100%;
   }
   
   .contact-container {
@@ -920,7 +922,7 @@ ul li a {
   }
 }
 
-@keyrames ulShow {
+@keyframes ulShow {
   0% {
     background:none;
   }
