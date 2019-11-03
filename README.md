@@ -1,2 +1,11 @@
-Hey. This is my website (my folder) You can see there my projects, skills and contact to me.
+# My Website (Portfolio) 
 
+## You can see there my: 
+
+* Projects
+
+* My skill list
+
+* Contact to me 
+
+#### And also commission a website
