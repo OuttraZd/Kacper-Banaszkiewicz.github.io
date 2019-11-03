@@ -146,7 +146,7 @@ ul li a {
 .motto {  
   text-transform: uppercase;
   position: relative;
-  bottom: 110px;
+  bottom: 25px;
   color: #fff;
   font-size: 32px;
   font-family: 'Poppins', sans-serif;
@@ -157,9 +157,9 @@ ul li a {
 .me {
   color: #fff;
   position: relative;
-  bottom: 110px;
+  bottom: 30px;
   line-height: 25px;
-  padding: 0 30px;
+  padding: 20px 30px;
 }
 
 .me-color {
@@ -168,8 +168,6 @@ ul li a {
 }
 
 .more {
-  position: relative;
-  bottom: 110px;
   width: 200px;
   height: 40px;
   border: 1px solid #fff;
@@ -180,6 +178,7 @@ ul li a {
   cursor: pointer;
   margin-left: 30px;
   border-radius:5px; 
+  margin-bottom:40px;
 }
 
 .more:hover {
@@ -842,7 +841,7 @@ ul li a {
 
 @media (min-width: 600px) {
   .more {
-    bottom: 50px;
+    bottom: 40px;
   }
 }
 
