@@ -102,10 +102,6 @@ ul li a {
   text-decoration: none;
 }
 
-.nav-ico {
-  display: none;
-}
-
 .toggle {
   width: 20%;
   padding: 7px 20px;
@@ -515,7 +511,7 @@ ul li a {
 	position:fixed;
 	background:#f1f1f1;
 	margin-bottom:20px;
-	margin-right:20px;
+	margin-right:20px;	
 	cursor:pointer;
 	display:flex;
 	align-items:center;
