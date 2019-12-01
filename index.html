@@ -28,10 +28,12 @@
 				</ul>
 			</nav>
 
-			<div data-aos="fade-left" class="toggle">
-				<span class="fas fa-bars menu"></span>
-			</div>
-
+			<button data-aos="fade-left" class="toggle" id="nav-icon3">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
 		</header>
 
 
@@ -326,26 +328,24 @@
 
 		</script>
 
-
-		<script type="text/javascript">
-
-			var toggle = document.querySelector('.toggle');
-
-			toggle.onclick = function () {
-				this.classList.toggle('light');
-			};
-
-		</script>
-
-
 		<script type="text/javascript">
 
 			$(document).ready(function () {
-				$('.menu').click(function () {
+				$('.toggle').click(function () {
 					$('ul').toggleClass('active');
 				})
 			})
 
+		</script>
+		
+		<script type="text/javascript">
+		
+			$(document).ready(function(){
+				$('.toggle').click(function(){
+					$(this).toggleClass('open');
+				});
+			});
+			
 		</script>
 
 
