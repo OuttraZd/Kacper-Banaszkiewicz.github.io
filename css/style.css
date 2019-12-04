@@ -154,10 +154,10 @@ ul li a {
   top: 26px;
 }
 
-#nav-icon3.open span:nth-child(1),
-#nav-icon3.open span:nth-child(2),
-#nav-icon3.open span:nth-child(3),
-#nav-icon3.open span:nth-child(4) {
+.toggle.open span:nth-child(1),
+.toggle.open span:nth-child(2),
+.toggle.open span:nth-child(3),
+.toggle.open span:nth-child(4) {
 	background-color:#000;
 }
 
